@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los botones se ajusten en línea */
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tablinks {
+    flex: 1; /* Cada botón ocupa el mismo espacio */
+    padding: 10px;
+    margin: 5px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tablinks:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+}
+
+/* Estilo para el botón activo */
+.tablinks.active {
+    background-color: #0056b3; /* Color más oscuro para el botón activo */
+    border-bottom: 2px solid #003f7f; /* Borde inferior para resaltar el botón activo */
+    font-weight: bold; /* Negrita para el texto activo */
+}
+
+
+
+.tabcontent {
+    display: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+}
+
+.message {
+    display: none; /* Oculto por defecto */
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    animation: fadeIn 0.5s;
+}
+
+/* Estilo para el mensaje exitoso */
+.message.success {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: 1px solid #3e8e41; /* Un verde más oscuro para el borde */
+}
+
+/* Animación de desvanecimiento */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Estilo para mostrar el mensaje */
+.show {
+    display: block; /* Mostrar el mensaje */
+}
+
+/* Consultas de medios para dispositivos móviles */
+@media (max-width: 600px) {
+    .tabs {
+        flex-direction: column; /* Pone los botones uno debajo del otro */
+    }
+
+    .tablinks {
+        width: 100%; /* Los botones ocupan el 100% del ancho */
+        margin: 5px 0; /* Espaciado vertical */
+    }
+
+    h1 {
+        font-size: 24px; /* Tamaño de fuente más pequeño en móvil */
+    }
+
+    .message {
+        font-size: 14px; /* Tamaño de fuente más pequeño para el mensaje */
+    }
+
+    table {
+        font-size: 14px; /* Tamaño de fuente más pequeño en la tabla */
+    }
+}

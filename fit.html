@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario de Ejercicios</title>
+    <link rel="stylesheet" href="rec/styles.css">
+</head>
+<body>
+    <h1>Calendario de Ejercicios para la Espalda</h1>
+    <div class="tabs">
+        <button class="tablinks" onclick="openTab(event, 'Lunes')">Lunes</button>
+        <button class="tablinks" onclick="openTab(event, 'Martes')">Martes</button>
+        <button class="tablinks" onclick="openTab(event, 'Miércoles')">Miércoles</button>
+        <button class="tablinks" onclick="openTab(event, 'Jueves')">Jueves</button>
+        <button class="tablinks" onclick="openTab(event, 'Viernes')">Viernes</button>
+        <button class="tablinks" onclick="openTab(event, 'Sábado')">Sábado</button>
+        <button class="tablinks" onclick="openTab(event, 'Domingo')">Domingo</button>
+    </div>
+
+    <div id="exerciseContainer">
+        <table id="exerciseTable">
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Ejercicio</th>
+                    <th>Realizado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Las filas se llenarán mediante JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    <button id="saveButton">Guardar Progreso</button>
+    <div id="message" class="message"></div>
+
+    <script src="rec/script.js"></script>
+</body>
+</html>
